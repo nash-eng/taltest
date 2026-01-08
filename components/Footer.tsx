@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-2 text-white mb-4">
               <Bot size={24} className="text-brand-primary" />
-              <span className="text-xl font-bold">AI Trials</span>
+              <span className="text-xl font-bold font-display">AI Trials</span>
             </div>
             <p className="text-sm">The future of recruiting is agentic, autonomous, and efficient.</p>
           </div>
