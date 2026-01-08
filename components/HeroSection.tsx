@@ -49,7 +49,7 @@ export default function HeroSection() {
               {/* Header */}
               <div className="h-16 border-b border-slate-100 bg-white/50 backdrop-blur-md flex items-center justify-between px-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center text-brand-primary">
+                  <div className="w-10 h-10 rounded-full bg-brand-lavender flex items-center justify-center text-brand-primary border border-purple-100">
                     <Bot />
                   </div>
                   <div>
@@ -73,7 +73,7 @@ export default function HeroSection() {
                  <div className="flex gap-4 max-w-[80%]">
                     <img src="https://ui-avatars.com/api/?name=Jane+C&background=f3e8ff&color=7c3aed" alt="User" className="w-10 h-10 rounded-full border-2 border-white shadow-sm" />
                     <div className="flex flex-col gap-1">
-                      <div className="bg-white text-slate-700 p-5 rounded-2xl rounded-tl-none border border-slate-200 shadow-sm text-sm leading-relaxed">
+                      <div className="bg-white text-slate-700 p-5 rounded-2xl rounded-tl-none border border-slate-200 shadow-md shadow-slate-200/50 text-sm leading-relaxed">
                         <span className="block font-bold text-slate-900 mb-1">Jane Cooper</span>
                         I need a Senior Product Designer for the Fintech team. Ideally someone who has scaled a design system before and has 5+ years of experience.
                       </div>
@@ -87,8 +87,8 @@ export default function HeroSection() {
                       <Sparkles size={18} fill="currentColor" />
                     </div>
                     <div className="flex flex-col gap-1 items-end w-full">
-                      <div className="bg-white p-2 rounded-2xl rounded-tr-none border border-purple-100 shadow-xl shadow-purple-900/5 w-full">
-                        <div className="p-4 bg-brand-lavender/30 rounded-xl mb-2">
+                      <div className="bg-white p-2 rounded-2xl rounded-tr-none border border-purple-200 shadow-xl shadow-purple-900/5 w-full">
+                        <div className="p-4 bg-brand-lavender/30 rounded-xl mb-2 border border-purple-100/50">
                            <div className="flex items-center gap-2 mb-3 text-brand-primary text-sm font-bold">
                               <Search size={16} />
                               <span>Sourcing Candidates...</span>
@@ -99,12 +99,12 @@ export default function HeroSection() {
                         </div>
                         
                         <div className="space-y-3 p-2">
-                           {/* Candidate Card 1 */}
-                           <div className="flex items-center justify-between p-3 bg-white border border-slate-100 rounded-xl hover:border-brand-primary/30 hover:shadow-md transition-all cursor-pointer group/card">
+                           {/* Candidate Card 1 - Stronger definition */}
+                           <div className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-xl hover:border-brand-primary/30 shadow-sm hover:shadow-md transition-all cursor-pointer group/card">
                               <div className="flex items-center gap-4">
                                  <div className="relative">
-                                    <img src="https://ui-avatars.com/api/?name=Robert+Fox&background=ffedd5&color=c2410c" alt="RF" className="w-10 h-10 rounded-full" />
-                                    <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-0.5">
+                                    <img src="https://ui-avatars.com/api/?name=Robert+Fox&background=ffedd5&color=c2410c" alt="RF" className="w-10 h-10 rounded-full border border-slate-100" />
+                                    <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-0.5 shadow-sm">
                                        <CheckCircle size={12} className="text-brand-primary fill-white" />
                                     </div>
                                  </div>
@@ -117,17 +117,17 @@ export default function HeroSection() {
                            </div>
 
                            {/* Candidate Card 2 */}
-                           <div className="flex items-center justify-between p-3 bg-white border border-slate-100 rounded-xl hover:border-brand-primary/30 hover:shadow-md transition-all cursor-pointer group/card">
+                           <div className="flex items-center justify-between p-3 bg-white border border-slate-200 rounded-xl hover:border-brand-primary/30 shadow-sm hover:shadow-md transition-all cursor-pointer group/card">
                               <div className="flex items-center gap-4">
                                  <div className="relative">
-                                    <img src="https://ui-avatars.com/api/?name=Esther+H&background=dbeafe&color=1d4ed8" alt="EH" className="w-10 h-10 rounded-full" />
+                                    <img src="https://ui-avatars.com/api/?name=Esther+H&background=dbeafe&color=1d4ed8" alt="EH" className="w-10 h-10 rounded-full border border-slate-100" />
                                  </div>
                                  <div>
                                     <div className="text-sm font-bold text-slate-900">Esther Howard</div>
                                     <div className="text-xs text-slate-500">Ex-Airbnb • 5 YOE</div>
                                  </div>
                               </div>
-                              <span className="text-brand-primary text-xs font-bold px-3 py-1 bg-purple-100 rounded-full">88% Match</span>
+                              <span className="text-brand-primary text-xs font-bold px-3 py-1 bg-purple-100 rounded-full border border-purple-200">88% Match</span>
                            </div>
                         </div>
                         
@@ -166,7 +166,6 @@ export default function HeroSection() {
           <div className="mt-20 w-full">
              <p className="text-sm text-slate-400 font-semibold uppercase tracking-widest mb-8">Trusted by Hiring Teams at</p>
              <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-40 grayscale mix-blend-multiply">
-                {/* Simple Text Placeholders for Logos to keep it clean */}
                 <h3 className="text-2xl font-bold font-display text-slate-800">Acme Corp</h3>
                 <h3 className="text-2xl font-bold font-display text-slate-800">GlobalBank</h3>
                 <h3 className="text-2xl font-bold font-display text-slate-800">Stark Ind</h3>

@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ImpactSection from './components/ImpactSection';
 import FeaturesSection from './components/FeaturesSection';
-import BenefitsSection from './components/BenefitsSection';
+import ReviewSection from './components/ReviewSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 
@@ -15,7 +15,7 @@ export default function App() {
         <HeroSection />
         <ImpactSection />
         <FeaturesSection />
-        <BenefitsSection />
+        <ReviewSection />
         <ContactSection />
       </main>
       <Footer />

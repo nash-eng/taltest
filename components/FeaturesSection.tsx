@@ -3,7 +3,7 @@ import { Brain, Globe, Calendar, MessageSquare, PenTool, BarChart3 } from 'lucid
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="py-16 bg-white relative overflow-hidden">
+    <section id="features" className="py-16 bg-slate-50 relative overflow-hidden">
       
       {/* Section Header */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 relative z-10 text-center md:text-left">
@@ -21,7 +21,7 @@ export default function FeaturesSection() {
         <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6 auto-rows-[350px]">
           
           {/* Card 1: Summaries (Large) */}
-          <BentoCard className="md:col-span-6 lg:col-span-8 group overflow-hidden bg-white border-slate-100 shadow-xl shadow-slate-200/50">
+          <BentoCard className="md:col-span-6 lg:col-span-8 group overflow-hidden bg-white border border-slate-200 shadow-lg shadow-slate-200/50">
              <div className="flex flex-col h-full relative z-10">
                 <div className="flex items-start justify-between mb-4">
                    <div className="p-3 bg-brand-lavender rounded-xl text-brand-primary border border-purple-100">
@@ -61,7 +61,7 @@ export default function FeaturesSection() {
           </BentoCard>
 
           {/* Card 2: Global Sourcing (Medium) */}
-          <BentoCard className="md:col-span-6 lg:col-span-4 bg-gradient-to-br from-brand-lavender to-white border-purple-100">
+          <BentoCard className="md:col-span-6 lg:col-span-4 bg-gradient-to-br from-brand-lavender to-white border border-slate-200 shadow-md">
              <div className="flex flex-col h-full relative z-10">
                 <div className="p-3 bg-white rounded-xl text-brand-secondary w-fit border border-pink-100 mb-4 shadow-sm">
                    <Globe size={24} />
@@ -70,7 +70,7 @@ export default function FeaturesSection() {
                 <p className="text-slate-600 text-sm mb-6">Access talent from 150+ countries. The agent handles timezones and languages.</p>
                 
                 {/* Map Visual */}
-                <div className="flex-1 rounded-xl overflow-hidden relative border border-white/50 bg-white/50">
+                <div className="flex-1 rounded-xl overflow-hidden relative border border-white/50 bg-white/50 shadow-inner">
                    <img 
                     src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=600&auto=format&fit=crop" 
                     alt="Global Map" 
@@ -78,16 +78,16 @@ export default function FeaturesSection() {
                    />
                    {/* Pins */}
                    <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-brand-secondary rounded-full animate-ping"></div>
-                   <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-brand-secondary rounded-full border-2 border-white"></div>
+                   <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-brand-secondary rounded-full border-2 border-white shadow-sm"></div>
                    
                    <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-brand-primary rounded-full animate-ping delay-300"></div>
-                   <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-brand-primary rounded-full border-2 border-white"></div>
+                   <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-brand-primary rounded-full border-2 border-white shadow-sm"></div>
                 </div>
              </div>
           </BentoCard>
 
           {/* Card 3: Scheduling (Small) */}
-          <BentoCard className="md:col-span-3 lg:col-span-4 bg-white border-slate-100">
+          <BentoCard className="md:col-span-3 lg:col-span-4 bg-white border border-slate-200 shadow-md">
              <div className="flex flex-col h-full relative z-10">
                  <div className="flex items-center justify-between mb-4">
                     <div className="p-2 bg-orange-50 rounded-lg text-orange-500 border border-orange-100">
@@ -105,7 +105,7 @@ export default function FeaturesSection() {
                     </div>
                     {/* Floating Confirm Badge */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                       <div className="bg-white shadow-xl rounded-full px-3 py-1 flex items-center gap-1 border border-slate-100">
+                       <div className="bg-white shadow-xl rounded-full px-3 py-1 flex items-center gap-1 border border-slate-200">
                           <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                           <span className="text-[10px] font-bold text-slate-800">Booked</span>
                        </div>
@@ -115,7 +115,7 @@ export default function FeaturesSection() {
           </BentoCard>
 
           {/* Card 4: Interviews (Large) */}
-          <BentoCard className="md:col-span-3 lg:col-span-4 bg-white border-slate-100">
+          <BentoCard className="md:col-span-3 lg:col-span-4 bg-white border border-slate-200 shadow-md">
               <div className="flex flex-col h-full relative z-10">
                 <div className="p-2 bg-blue-50 rounded-lg text-blue-500 w-fit mb-4 border border-blue-100">
                    <MessageSquare size={20} />
@@ -140,7 +140,7 @@ export default function FeaturesSection() {
           </BentoCard>
 
           {/* Card 5: Transcription (Wide) */}
-          <BentoCard className="md:col-span-6 lg:col-span-4 bg-white border-slate-100">
+          <BentoCard className="md:col-span-6 lg:col-span-4 bg-white border border-slate-200 shadow-md">
              <div className="flex flex-col h-full relative z-10">
                  <div className="flex items-center justify-between mb-4">
                      <div className="p-3 bg-emerald-50 rounded-xl text-emerald-500 border border-emerald-100">

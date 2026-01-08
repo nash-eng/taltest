@@ -73,7 +73,7 @@ export default function ImpactSection() {
         
         {/* Header */}
         <div className="text-center mb-16">
-           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 border border-purple-200 text-brand-primary text-xs font-semibold uppercase tracking-wider mb-4">
+           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 border border-purple-200 text-brand-primary text-xs font-semibold uppercase tracking-wider mb-4 shadow-sm">
               <Zap size={12} fill="currentColor" />
               Automated Funnel
            </div>
@@ -123,7 +123,7 @@ export default function ImpactSection() {
                   <div 
                     key={step.id} 
                     className={`relative flex flex-col items-center transition-all duration-700 ease-out transform
-                      ${isFuture ? 'opacity-40 scale-95 grayscale' : 'opacity-100 scale-100 grayscale-0'}
+                      ${isFuture ? 'opacity-60 scale-95 grayscale' : 'opacity-100 scale-100 grayscale-0'}
                     `}
                   >
                      
@@ -132,20 +132,20 @@ export default function ImpactSection() {
                         w-12 h-12 rounded-full border-4 flex items-center justify-center z-10 mb-8 transition-all duration-500 bg-white
                         ${isActive 
                           ? step.id === 5 
-                            ? 'border-brand-secondary text-brand-secondary shadow-lg shadow-pink-500/20 scale-110' 
-                            : 'border-brand-primary text-brand-primary shadow-lg shadow-purple-500/20'
-                          : 'border-slate-200 text-slate-300'
+                            ? 'border-brand-secondary text-brand-secondary shadow-lg shadow-pink-500/30 scale-110' 
+                            : 'border-brand-primary text-brand-primary shadow-lg shadow-purple-500/30'
+                          : 'border-slate-200 text-slate-300 shadow-sm'
                         }
                      `}>
                         {step.icon}
                      </div>
 
-                     {/* Card Content */}
+                     {/* Card Content - Increased Shadow and Border */}
                      <div className={`
                         w-full max-w-[240px] bg-white border p-6 rounded-2xl relative transition-all duration-500
                         ${isActive 
-                           ? 'border-purple-100 shadow-xl shadow-purple-900/5 translate-y-0' 
-                           : 'border-slate-100 shadow-sm translate-y-4'
+                           ? 'border-purple-200 shadow-xl shadow-purple-900/10 translate-y-0 ring-1 ring-purple-100' 
+                           : 'border-slate-200 shadow-md translate-y-4'
                         }
                      `}>
                         
